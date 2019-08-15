@@ -75,9 +75,11 @@ public class CodingMain {
 			}
 		} else {
 			String url = file.getAbsolutePath();
-			if(url.endsWith(".html") || url.endsWith(".htm")) {
+			if(url.endsWith(".html") || url.endsWith(".htm") || url.endsWith(".css") || url.endsWith(".js")) {
 				String outputDirectory = url.replace(ORIGIN_DIRECTORY, DEST_DIRECTORY);
 				saveAsUTF8(url, outputDirectory);
+			}else {
+				// copy other files.
 			}
 		}
 	}
