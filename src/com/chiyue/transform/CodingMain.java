@@ -128,6 +128,7 @@ public class CodingMain {
 		FileInputStream input = new FileInputStream(sourceFile);
 		BufferedInputStream inBuff = new BufferedInputStream(input);
 
+	
 		// 新建文件输出流并对它进行缓冲
 		FileOutputStream output = new FileOutputStream(targetFile);
 		BufferedOutputStream outBuff = new BufferedOutputStream(output);
